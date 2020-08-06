@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string S;
+    int T;
+    cin >> T;
+    string even = "";
+    string odd = "";
+   
+    int l;
+
+    while (T-- > 0) {
+        even = "";
+        odd = "";
+        cin >> S;
+        l = S.length();
+        for (int j = 0; j < l; j++) {
+            if (j % 2 == 0) {
+                even = even + S[j];
+            }
+            else odd = odd + S[j];
+        }
+        cout << even << " " << odd << endl;
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
