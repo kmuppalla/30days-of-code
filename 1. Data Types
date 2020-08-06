@@ -1,4 +1,15 @@
-int x;
+#include <iostream>
+#include <iomanip>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    	int i = 4;
+    	double d = 4.0;
+    	string s = "HackerRank ";
+    
+    	int x;
 	double y;
 	string z;// Declare second integer, double, and String variables.
 
@@ -6,8 +17,8 @@ int x;
 	cin >> x;
 	cin >> y;
 	std::cout << std::setprecision(1) << std::fixed;
-    cin.ignore();
-    getline(cin, z);
+    	cin.ignore();
+    	getline(cin, z);
 	
 
 
@@ -17,4 +28,5 @@ int x;
 	cout << sum1 << endl;
 	cout << s << z << endl;
 
-    return 0;
+   return 0;
+}
